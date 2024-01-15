@@ -26,11 +26,11 @@ WSL provides command line tool wsl.exe to interact with the Linux subsystem.
 Linux home directory: /home/username (or ~)
 Windows home directory: /mnt/c/Users/Username
 
-
-Ignore files in Windows filesystem
+- Ignore files in Windows filesystem when searching
 ```bash
 find / -name ".profile" -print -o -path "/mnt/c" -prune 2>/dev/null
 ```
+
 ## Network
 WSL visual machine is a client of a virtual network
 • This network provides a private, dynamic IP address
